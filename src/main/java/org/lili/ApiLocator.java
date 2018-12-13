@@ -61,6 +61,7 @@ public class ApiLocator {
                                 .and()
                                 .path(SERVICE)
                                 .filters(f -> {
+                                    f.filter(requestFilter);
                                     return f;
                                 })
                                 .uri(URI))
@@ -77,6 +78,7 @@ public class ApiLocator {
                                 .and()
                                 .path(SERVICE)
                                 .filters(f -> {
+                                    f.filter(requestFilter);
                                     return f;
                                 })
                                 .uri(URI));
