@@ -33,8 +33,8 @@ public class ApiLocator {
 
         /*
         route1 是get请求，get请求使用readBody会报错
-        route2 是post请求，Content-Type是application/x-www-form-urlencoded
-        route3 是post请求，Content-Type是application/json
+        route2 是post请求，Content-Type是application/x-www-form-urlencoded，readbody为String.class
+        route3 是post请求，Content-Type是application/json,readbody为Object.class
          */
         RouteLocatorBuilder.Builder routes = builder.routes();
         RouteLocatorBuilder.Builder serviceProvider = routes
