@@ -49,7 +49,7 @@ public class RequestFilter implements GatewayFilter, Ordered {
      * 但是在spring-boot-starter-parent 2.1.0.RELEASE + Spring Cloud Greenwich.M3 body 中不生效，总是为空
      *
      * @param serverHttpRequest
-     * @return
+     * @return 
      */
     private String resolveBodyFromRequest(ServerHttpRequest serverHttpRequest) {
         Flux<DataBuffer> body = serverHttpRequest.getBody();
